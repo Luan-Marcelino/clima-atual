@@ -1,0 +1,130 @@
+
+
+:root {
+	--cor1: #3AD3E0;
+	--cor2: #DEC72F;
+	--cor3: #DE2F93;
+
+	--cor-sombra1: #435C5E;
+	--cor-sombra2: #5E5B43;
+	--cor-sombra3: #894A6E;
+
+	--fonte-principal: "Poppins", sans-serif;
+}
+
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--fonte-principal);
+}
+
+body {
+	background-color: var(--cor-sombra1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container-principal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 400px;
+	height: auto;
+	background-color: var(--cor1);
+	border-radius: 20px;
+	padding: 20px;
+	gap: 15px;
+
+	.campo-pesquisa {
+		display: flex;
+		flex-direction: row;
+		width: 80%;
+		gap: 10px;
+
+		input {
+			background-color: rgba(255, 255, 255, 0.197);
+			border: none;
+			border-radius: 10px;
+			border-bottom: 1px solid var(--cor-sombra1);
+			outline: none;
+			flex: 1;
+			
+
+			&:focus {
+				border-left: 1px solid var(--cor-sombra1);
+				border-top: 1px solid var(--cor-sombra1);		
+				border-right: 1px solid var(--cor-sombra1);	
+				transition: border-left 0.02s ease, border-top 0.05s ease, border-right 0.1s ease-in;
+			}
+
+			&:not(:focus) {
+				border-left: 0px solid var(--cor-sombra1);
+				border-top: 0px solid var(--cor-sombra1);		
+				border-right: 0px solid var(--cor-sombra1);	
+				transition: border-left 0.05s ease-out, border-top 0.1s ease-out, border-right 0.2s ease-out;
+			}
+		}
+
+		button {
+			width: 50px;
+			aspect-ratio: 1 / 1;
+			background-color: var(--cor2);
+			border: none;
+			outline: none;
+			border-radius: 10px;
+		}
+
+	}
+
+	.infos-principais {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		
+
+		.img-clima-celsius {
+			display: flex;
+			justify-content: space-between;
+
+			img {
+				
+			}
+
+			p {
+				font-size: 3em;
+				
+			}
+
+			.info-min-max {
+				
+
+				label {
+					display: flex;
+					flex-direction: row;
+					gap: 5px;
+					font-size: 12px;
+				}
+
+				p {
+					font-size: 1.5em;
+					
+				}
+
+			}
+		}
+	}
+
+	.info-umidade-vento {
+		
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+}
