@@ -15,5 +15,6 @@ O objetivo desse projeto é praticar a consumir uma API e integrar as informaç�
 ## Imagens de como está o projeto Atualmente
 Tela antes de pesquisar a cidade
 ![imagem Atual da Página sem input](src/imagens/tela-atual1.png)
+<br/>
 Tela quando pesquisada a cidade
 ![imagem Atual da Página com input](src/imagens/tela-atual2.png)
