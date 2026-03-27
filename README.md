@@ -33,3 +33,5 @@ Tela antes de pesquisar a cidade
 <br/>
 Tela quando pesquisada a cidade
 ![imagem Atual da Página com input](src/imagens/tela-atual2.png)
+Quando digitar o nome da cidade errado
+![Imagem de erro do nome da cidade](src/imagens/tela-atual-erro.png)
