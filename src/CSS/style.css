@@ -56,18 +56,20 @@ body {
 			outline: none;
 			background-color: transparent;
 			font-size: 1em;
-			padding: 10px;
+			padding: 5px 10px 5px 15px;
 			color: #fdfdfd;
+			
 		}
 
 		button {
 			text-align: center;		
-			width: 100%;
+			width: 50px;
 			aspect-ratio: 1 / 1;
 			border: none;
 			outline: none;
-			border-radius: 100%;
+			border-radius: 50%;
 			background-color: var(--cor2);
+			
 		}
 
 		.fa-location-dot {
@@ -82,6 +84,9 @@ body {
 		}
 
 	}
+
+
+
 }
 
 .campo-conteudo {
@@ -101,10 +106,23 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;	
+		
+		.titulo{
+			display: flex;
+			flex-direction: row;
+			gap: 10px;
+			align-items: center;
+			justify-content: center;
+
+			img {
+				width: 40px;
+			}
+
+		}
 
 		.img-clima-celsius {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			align-items: center;
 			gap: 5px; 
 			border-radius: 10px;
@@ -119,8 +137,10 @@ body {
 			}
 
 			p {
+				
 				font-size: 3em;
 				font-weight: 800;
+				
 
 				sup {
 					font-size: 20px;
@@ -133,6 +153,7 @@ body {
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
+				
 				gap: 1px;
 
 				sup {
@@ -145,7 +166,7 @@ body {
 					align-items: center;
 					gap: 5px;
 						i {
-							color:red;
+							color: rgb(172, 11, 11);
 						}
 				}
 
@@ -156,7 +177,8 @@ body {
 					gap: 5px;
 
 						i {
-							color:blue;
+							
+							color: rgb(4, 55, 142);
 						}
 				}
 
@@ -222,6 +244,16 @@ body {
 	}
 }
 
+.alerta-erro {
+	display: none;
+	width: 100%;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	color: var(--cor-sombra3);
+
+}
+
 .show {
-		display: flex;
-	}
+	display: flex;
+}
